@@ -1,91 +1,47 @@
-# HR Employee Attrition Analysis Using SQL
+Project Description for hr-employee-attrition-sql
 
-This project analyzes employee attrition using SQL to identify patterns and insights that may help HR departments improve employee retention.
+This project explores employee attrition data using SQL to uncover insights about workforce trends, employee satisfaction, and key factors contributing to employee turnover.
 
-## Project Overview
+The dataset used comes from IBM HR Analytics and contains demographic, job-related, and performance data of employees.
 
-The dataset contains information on 1,470 employees, including features like age, department, job role, monthly income, overtime status, and whether the employee has left the organization. A sample of 50 rows is used for demonstration in this project.
+Features:
 
-The primary goal is to write SQL queries to explore the relationships between attrition and different employee attributes.
+Created a structured relational schema for the dataset
 
-## Dataset
+Inserted real HR data using SQL INSERT statements
 
-- Source: IBM HR Analytics Employee Attrition dataset
-- Format: CSV (converted to SQL insert statements)
-- Sample Size: 50 records (for demonstration purposes)
-- Key columns:
-  - Attrition
-  - Age
-  - Department
-  - JobRole
-  - MonthlyIncome
-  - Overtime
-  - EducationField
-  - Gender
+Wrote analytical queries to explore:
 
-## Tools and Technologies
+Attrition by department, gender, age group
 
-- SQLite
-- SQL (DDL, DML, aggregate queries, subqueries)
-- Git & GitHub
+Relationship between overtime, job satisfaction, and attrition
 
-## How to Use
+Tenure analysis
 
-1. Clone the repository:
+Salary distribution and promotions
 
-```bash
-git clone https://github.com/sakshi170230/hr-employee-attrition-sql.git
-cd hr-employee-attrition-sql
-Launch SQLite and run:
+Designed to be beginner-friendly and modular for adding more queries
 
-bash
-Copy
-Edit
-sqlite3 hr_data.db
-.read schema.sql
-.read hr_data_inserts.sql
-.read hr_queries.sql
-View query results in the terminal.
+Tech Stack:
 
-SQL Queries
-The following types of analysis are performed:
+SQL (PostgreSQL / MySQL compatible)
 
-Count of total employees
+Git & GitHub for version control
 
-Count and percentage of attrition
+Dataset: WA_Fn-UseC_-HR-Employee-Attrition.csv
 
-Attrition by department and job role
+Files Included: 
 
-Average income by department
+hr_schema.sql – Table creation statements
 
-Gender-wise attrition
+hr_data_inserts.sql – Insert statements for sample data
 
-Attrition by overtime status
+hr_queries.sql – All analysis queries with comments
 
-Attrition across age groups and education fields
+What You’ll Learn:
 
-Sample Insights
-Approx. 24% of employees in the sample have left.
+Structuring flat CSV data into a normalized SQL schema
 
-Sales department has higher attrition compared to others.
+Writing insightful SQL queries for real-world HR analysis
 
-Employees doing overtime show significantly higher attrition.
-
-Monthly income does not always correlate with retention.
-
-R&D department shows lower attrition compared to Sales.
-
-File Structure
-pgsql
-Copy
-Edit
-.
-├── schema.sql            -- Table schema for the HR dataset
-├── hr_data_inserts.sql   -- INSERT statements (50 rows)
-├── hr_queries.sql        -- SQL analysis queries
-├── insights.md           -- Summary of key insights (optional)
-└── README.md             -- Project documentation
-Author
-Sakshi Mishra
-B.Tech, Alliance College of Engineering and Design
-GitHub: sakshi170230
+Interpreting data for actionable insights in employee retention
